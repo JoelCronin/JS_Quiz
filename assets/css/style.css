@@ -1,0 +1,52 @@
+body {
+    border: red solid 2px;
+    justify-content: center;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#startButton{
+    height: 100px;
+    width: 100px;
+}
+
+#container{
+    border: blue solid 2px;
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+}
+
+#timer {
+    font-size: x-large;
+    border: blue solid 2px;
+    margin: 10px;
+    min-width: 100px;
+}
+
+#quizContainer {
+    border: solid black 2px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-self: center;
+    justify-content: space-around;
+}
+
+#highScores{
+    border: green solid 2px;
+    margin: 10px;
+    min-width: 100px;
+}
+
+#questionBox,
+#answerBox1,
+#answerBox2,
+#answerBox3{
+    border: green solid 2px;
+}
