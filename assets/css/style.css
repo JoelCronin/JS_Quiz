@@ -18,6 +18,7 @@ body {
     display: flex;
     justify-content: space-around;
     height: 700px;
+    align-items: center;
 }
 
 #timer {
@@ -25,6 +26,7 @@ body {
     border: blue solid 2px;
     margin: 10px;
     min-width: 100px;
+    
 }
 
 #quizContainer {
@@ -49,4 +51,15 @@ body {
 #answerBox2,
 #answerBox3{
     border: green solid 2px;
+}
+
+#finalBox{
+    border: violet 3px solid;
+    display: flex;
+    height: 320px;
+    width: 320px;
+}
+
+#initials{
+    display: none;
 }
