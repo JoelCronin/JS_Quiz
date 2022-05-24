@@ -1,65 +1,100 @@
 body {
-    border: red solid 2px;
     justify-content: center;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #430955);
+    font-family: tahoma;
 }
 
 #buttonContainer {
     display: flex;
     justify-content: center;
+    height: 100px;
 }
 
 #startButton{
     height: 100px;
     width: 100px;
+    border-radius: 30%;
+    background-color: #ebf8e1;
+    color: #3f87a6;
+    font-size: larger;
+    font-weight: 700;
 }
 
 #container{
-    border: blue solid 2px;
     display: flex;
     justify-content: space-around;
-    height: 700px;
+    height:400px;
     align-items: center;
 }
 
 #timer {
     font-size: x-large;
-    border: blue solid 2px;
     margin: 10px;
     min-width: 100px;
+    display: none;
     
 }
 
 #quizContainer {
-    border: solid black 2px;
-    height: 300px;
-    width: 300px;
     display: flex;
     flex-direction: column;
     margin: 10px;
     align-self: center;
     justify-content: space-around;
+    border: #ebf8e1 double 2px;
 }
 
 #highScores{
-    border: green solid 2px;
     margin: 10px;
     min-width: 100px;
+    display: none;
+    font-weight: 700;
+}
+
+#questionBox{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #430955);
 }
 
 #questionBox,
 #answerBox1,
 #answerBox2,
 #answerBox3{
-    border: green solid 2px;
+    border: black solid 1px;
+    border-radius: 10%;
+    padding: 0.2em;
+    margin: 1em;
+    font-weight: 700;
+    font-size: medium;
+    text-align: center;
 }
 
 #finalBox{
-    border: violet 3px solid;
     display: flex;
     height: 320px;
     width: 320px;
+    flex-direction: column;
 }
 
-#initials{
+#initialsBox{
     display: none;
+}
+
+#bottomContainer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#scoreList{
+ border: #ebf8e1 double 2px;
+ height:250px;
+ width: 250px;
+ padding: 15px;
+ margin-top: 80px;
+ text-align: center;
+ list-style-type: none;
+}
+
+li{
+    margin: 5px;
 }
