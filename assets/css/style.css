@@ -22,15 +22,15 @@ body {
 
 #container{
     display: flex;
-    justify-content: space-around;
-    height:400px;
+    justify-content: center;
+    height:300px;
     align-items: center;
 }
 
 #timer {
     font-size: x-large;
     margin: 10px;
-    min-width: 100px;
+    min-width: 70px;
     display: none;
     
 }
@@ -38,10 +38,11 @@ body {
 #quizContainer {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    /* margin: 10px; */
     align-self: center;
     justify-content: space-around;
     border: #ebf8e1 double 2px;
+    min-width: 200px;
 }
 
 #highScores{
@@ -68,6 +69,13 @@ body {
     text-align: center;
 }
 
+#commentBox{
+    font-size: small;
+    text-align: center;
+    padding: 10px;
+    font-weight:600;
+}
+
 #finalBox{
     display: flex;
     height: 320px;
@@ -83,18 +91,38 @@ body {
  display: flex;
  align-items: center;
  justify-content: center;
+ height: 250px;
 }
 
 #scoreList{
- border: #ebf8e1 double 2px;
- height:250px;
- width: 250px;
+
  padding: 15px;
  margin-top: 80px;
  text-align: center;
  list-style-type: none;
+ font-weight: 700;
+ display: flex;
+ flex-direction: column;
 }
 
 li{
     margin: 5px;
+    margin-top: 10px;
 }
+
+#li0{
+    color: gold;
+   }
+#li1{
+ color: rgb(156, 153, 153);
+}
+#li2{
+    color: rgb(110, 70, 10);
+}
+#li3{
+    color: brown;
+}
+#li4{
+    color: black;
+}
+
