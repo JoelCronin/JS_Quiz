@@ -128,7 +128,7 @@ function questionCycle () {
 function showScore() {
     container.setAttribute("style", "display: none");
     timerEl.setAttribute("style", "display: none");
-    finalScore.textContent = "QUIZ IS OVER!!!! Your final Score was " + scoreTally + "! If you want to register your Score please put your initials below.";
+    finalScore.textContent = "QUIZ IS OVER!!!! Your final Score was " + scoreTally + "! If you want to register your Score please put your initials below. If you would like to play again please refresh the page, dont worry you wont lose your recent scores!";
     highScoreEl.setAttribute("style", "display: none");
     initialsEl.setAttribute("style", "display: block");
     finalBox.setAttribute("style", "height: 150px", "margin-top: 20px")
@@ -154,7 +154,7 @@ submitButton.addEventListener("click", function(event){
     }
 })
 
-// submitButton.addEventListener("click", playAgain());
+
 
 //Renders Scores to the Recent scores section. Will display the last five scores only as it utilises minus numbers in the index
 function renderHighScore (){
