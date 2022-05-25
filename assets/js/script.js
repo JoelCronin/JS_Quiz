@@ -170,7 +170,7 @@ function renderHighScore (){
 function playAgain () {
     startButton.setAttribute("style", "display: block");
     initialsEl.setAttribute("style", "display: hidden");
-    scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
+    // scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
 }
 //Event listener for play again button
 playAgainButton.addEventListener("click", playAgain)
