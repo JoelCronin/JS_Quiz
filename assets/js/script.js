@@ -168,24 +168,14 @@ function renderHighScore (){
     }
 }
 
-// //Allows user to play quiz again
-// function playAgain () {
-//     // startButton.setAttribute("style", "display: block");
-//     // initialsEl.setAttribute("style", "display: hidden");
-//     // timeLeft = 20;
-//     startQuiz();
-//     // scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
-// }
+
 //Event listener for play again button
-playAgainButton.addEventListener("click", playAgain)
+playAgainButton.addEventListener("click", playAgain);
 
 //Allows user to play quiz again
 function playAgain () {
-    // startButton.setAttribute("style", "display: block");
-    // initialsEl.setAttribute("style", "display: hidden");
-    // timeLeft = 20;
     location.reload();
-    // scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
+
 }
 
 //Ensures Recent Scores is populated on loading of page
