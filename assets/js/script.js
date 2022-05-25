@@ -136,23 +136,25 @@ function showScore() {
    }
 
 //If user chooses to log score then this function pushes initials and score into an array that is saved in local storage where it can be used to populate High Scores
-submitButton.addEventListener("click", function(event){
-    event.preventDefault();
-    scoreArray = JSON.parse(localStorage.getItem("scoreArray")|| "[]")
-    var initialsValue = document.getElementById("initials").value;
-    scoreObject = {name: initialsValue, score: scoreTally}
-    scoreArray.push(scoreObject);
-    submitButton.setAttribute("style", "display: none");
+// submitButton.addEventListener("click", function(event){
+//     event.preventDefault();
+//     scoreArray = JSON.parse(localStorage.getItem("scoreArray")|| "[]")
+//     var initialsValue = document.getElementById("initials").value;
+//     scoreObject = {name: initialsValue, score: scoreTally}
+//     scoreArray.push(scoreObject);
+//     submitButton.setAttribute("style", "display: none");
 
-    if(initialsValue === "") {
-        scoreDisplay.textContent = "Initials cannot be blank!"
-    } else {
-        localStorage.setItem("scoreArray", JSON.stringify (scoreArray));
-        scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
-        scoreArray.push(scoreObject);
-        renderHighScore();
-    }
-})
+//     if(initialsValue === "") {
+//         scoreDisplay.textContent = "Initials cannot be blank!"
+//     } else {
+//         localStorage.setItem("scoreArray", JSON.stringify (scoreArray));
+//         scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
+//         scoreArray.push(scoreObject);
+//         renderHighScore();
+//     }
+// })
+
+submitButton.addEventListener("click", playAgain());
 
 //Renders Scores to the Recent scores section. Will display the last five scores only as it utilises minus numbers in the index
 function renderHighScore (){
