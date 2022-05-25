@@ -147,7 +147,7 @@ submitButton.addEventListener("click", function(event){
     if(initialsValue === "") {
         scoreDisplay.textContent = "Initials cannot be blank!"
     } else {
-        localStorage.setItem("scoreArray", JSON.stringify (scoreArray));
+        localStorage.setItem("scoreArray", JSON.stringify(scoreArray));
         scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
         scoreArray.push(scoreObject);
         renderHighScore();
@@ -168,16 +168,25 @@ function renderHighScore (){
     }
 }
 
-//Allows user to play quiz again
-function playAgain () {
-    startButton.setAttribute("style", "display: block");
-    initialsEl.setAttribute("style", "display: hidden");
-    timeLeft = 20;
-    startQuiz();
-    // scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
-}
+// //Allows user to play quiz again
+// function playAgain () {
+//     // startButton.setAttribute("style", "display: block");
+//     // initialsEl.setAttribute("style", "display: hidden");
+//     // timeLeft = 20;
+//     startQuiz();
+//     // scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
+// }
 //Event listener for play again button
 playAgainButton.addEventListener("click", playAgain)
+
+//Allows user to play quiz again
+function playAgain () {
+    // startButton.setAttribute("style", "display: block");
+    // initialsEl.setAttribute("style", "display: hidden");
+    // timeLeft = 20;
+    location.reload();
+    // scoreArray = JSON.parse(localStorage.getItem("scoreArray"));
+}
 
 //Ensures Recent Scores is populated on loading of page
 renderHighScore()
