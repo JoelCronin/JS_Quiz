@@ -16,7 +16,6 @@ var container = document.getElementById("quizContainer")
 var initialsEl = document.getElementById("initialsBox")
 var submitButton = document.getElementById("submit")
 var scoreDisplay = document.getElementById("scoreDisplay")
-var playAgainButton = document.getElementById("playAgain")
 var liEl0 = document.getElementById("li0")
 var liEl1 = document.getElementById("li1")
 var liEl2 = document.getElementById("li2")
@@ -154,8 +153,6 @@ submitButton.addEventListener("click", function(event){
     }
 })
 
-
-
 //Renders Scores to the Recent scores section. Will display the last five scores only as it utilises minus numbers in the index
 function renderHighScore (){
     var parseScore = JSON.parse(localStorage.getItem("scoreArray"));
@@ -168,15 +165,6 @@ function renderHighScore (){
     }
 }
 
-
-//Event listener for play again button
-playAgainButton.addEventListener("click", playAgain);
-
-//Allows user to play quiz again
-function playAgain () {
-    location.reload();
-
-}
 
 //Ensures Recent Scores is populated on loading of page
 renderHighScore()
