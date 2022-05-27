@@ -8,7 +8,10 @@ I stored all the questions and answers in objects which were then in turn stored
 
 ## Difficulites
 
-I had set up a 'Play Again' button at the end initially. However, despite trying  multiple different approaches every time it ran a '405' error came up on the browser. I even changed the playAgain function so that all it did was refresh the page using the location.reload() method but the 405 error still persisted. I therefore had to just ask the use the browser refresh and get rid of the play again button but otherwise everything works as planned.
+I had set up a 'Play Again' button at the end initially. However, despite trying  multiple different approaches every time it ran a '405' error came up on the browser. I even changed the playAgain function so that all it did was refresh the page using the location.reload() method but the 405 error still persisted. I therefore had to ask the user to manually refresh and get rid of the play again button. 
+
+However, this play again function was not in the specs from the client and so was a nice-to-have but not a necessity. I will check back with the client to see if they do want it and if they do continue work on a fix.
+
 
 ## Final Product
 
